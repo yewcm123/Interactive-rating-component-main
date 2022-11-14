@@ -111,12 +111,12 @@ article:nth-of-type(2) {
   
 }
 
-.radio-button > input {
+.radio-button >label > input {
   opacity: 0;
   position: absolute;
 }
 
-.radio-button > input:checked + div {
+.radio-button > label >input:checked + div {
   background-color: var(--primary-Orange);
   transition: .5s;
 }
