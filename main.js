@@ -8,8 +8,9 @@ let ratingValueSelected = null;
 
 const RatingClicked = (e) => {  
   ratingValueSelected = e.target.innerText;
+  console.log(ratingValueSelected)
   for (let i = 0; i < radioButton.length; i++) {
-    if (radioButton[i].getElementsByTagName("input")[0].value !== ratingValueSelected)
+    if (radioButton[i].getElementsByTagName("label")[0].innerText !== ratingValueSelected)
     {
       radioButton[i].classList.remove("selected")
     }else{
@@ -18,13 +19,7 @@ const RatingClicked = (e) => {
   }
 };
 
-window.addEventListener('DOMContentLoaded', ()=> {
-  for (let button = 0; button < radioButton.length; button++)
-  {
-    radioButton[button].addEventListener("click", RatingClicked)
-  }
-})
-
+radioButton.forEach((i)=>{i.addEventListener("click", RatingClicked)} )
 
 submitRatingButton.addEventListener("click", (e) => {
   if (ratingValueSelected === null) {
