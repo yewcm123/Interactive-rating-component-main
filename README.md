@@ -28,11 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Select Rating Page(Desktop)](./public/SelectRating(Desktop).png)
-![Thank You Page(Desktop)](./public/ThankYou(Desktop).png)
-![Select Rating Page(Mobile)](./public/SelectRating(IphoneSE).png)
-![Thank You Page(Mobile)](./public/ThankYou(iPhone%20SE).png)
-
+![Select Rating Page](./public/Select%20Rating%20Page.png)
+![Thank You Page](./public/Thank%20You%20Page.png)
 
 ### Links
 
@@ -51,23 +48,9 @@ Users should be able to:
 
 ### What I learned
 
-I have learned to structure my content flow more better thanks to my previous challenge. I have used javascript to enable interaction of submiting rating by user in this challenge. I learned to used getElementById and getElementByClass to interact with my html DOM. I also did some simple logic to reset the rating selection when user chose another rating. The example below showed what I did to solve this issue.
-
-```js
-const RatingClicked = (e) => {
-  const ratingRadio = document.getElementById("rating-radio")
-  ratingValueSelected = e.target.value;
-  for (let label of ratingRadio.children) {
-    let ratingCheck = label.getElementsByTagName("input")[0];
-    if (ratingCheck.value !== ratingValueSelected) {
-      ratingCheck.checked = false;
-    }
-  }
-};
-```
+I have learned to structure my content flow more better thanks to my previous challenge. I have used javascript to enable interaction of submiting rating by user in this challenge. I learned to used getElementById and getElementByClass to interact with my html DOM. I also did some simple logic to reset the rating selection when user chose another rating.
 
 I am able to finish this challenge within a day and I am grateful I challenge myself in Frontend Mentor to grow my frontend skills. 
-
 
 ### Continued development
 

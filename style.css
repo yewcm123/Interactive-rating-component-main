@@ -103,6 +103,7 @@ article:nth-of-type(2) {
 
 .radio-button:active , .selected {
   background-color: var(--primary-Orange);
+
   
 }
 
@@ -136,7 +137,7 @@ article:nth-of-type(2) {
   transition: background-color 0.5s;
 }
 
-button:hover {
+#submit-button:hover {
   cursor: pointer;
   background-color: var(--hover-orange);
 }
@@ -144,8 +145,19 @@ button:hover {
 .submit-button-text {
   color: var(--neutral-white);
   text-transform: uppercase;
+  transition: color 0.5s;
   
 }
+
+#submit-button:active {
+  background-color: var(--neutral-white);
+  
+}
+
+#submit-button:active > span {
+  color: var(--primary-Orange);
+}
+
 
 #thank-you-page {
   display:none;
