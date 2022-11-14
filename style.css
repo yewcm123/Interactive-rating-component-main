@@ -22,7 +22,7 @@
 h1,
 h2,
 p,
-span {
+label {
   color: var(--neutral-white);
 }
 
@@ -90,39 +90,43 @@ article:nth-of-type(2) {
   justify-content: space-around;
 }
 
-#rating-radio > label {
+.radio-button {
   position: relative;
-}
-
-#rating-radio > label:hover {
-  cursor: pointer;
-}
-
-#rating-radio > label > input {
-  opacity: 0;
-  position: absolute;
-}
-
-#rating-radio > label > input:checked + div {
-  background-color: var(--primary-Orange);
-  transition: .5s;
-}
-
-#rating-radio > label > div {
   width: 50px;
   height: 50px;
   z-index: 5;
   border-radius: 9999px;
   text-align: center;
   background-color: var(--neutral-Medium-Dark-Blue);
+  transition: .5s;
 }
 
-#rating-radio > label > div > span {
+.radio-button:active , .selected {
+  background-color: var(--primary-Orange);
+  
+}
+
+.radio-button:hover {
+  cursor: pointer;
+}
+
+.radio-button > input {
+  opacity: 0;
+  position: absolute;
+}
+
+.radio-button > input:checked + div {
+  background-color: var(--primary-Orange);
+  transition: .5s;
+}
+
+.radio-button > label {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 
 #submit-button {
   border: none;
